@@ -127,7 +127,7 @@ window.addEventListener('DOMContentLoaded', loadContent);
         // Load content from the server
         async function loadContent() {
     try {
-        const response = await fetch('http://localhost:3000/content');
+        const response = await fetch('https://soit3-3.onrender.com/content');
         const data = await response.json();
         boxes = data.content || []; // Load existing boxes
         contentContainer.innerHTML = ''; // Clear existing content
